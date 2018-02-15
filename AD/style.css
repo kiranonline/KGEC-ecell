@@ -1,0 +1,29 @@
+footer
+{
+   position: relative;
+   background-color: grey;
+   color: white;
+   text-align: center;
+   bottom:-40px;
+   left:-10px;
+   width:102%;   
+}
+
+figure {
+    display: inline-block;
+    padding-left:80px;
+    padding-right:80px;
+}
+
+figcaption {
+    text-align: center;
+}
+.container{
+padding-right:65px;
+padding-left:65px;
+margin-left:48px;
+margin-right:48px;
+}
+body {background-color:#F0F0F0;
+
+}
