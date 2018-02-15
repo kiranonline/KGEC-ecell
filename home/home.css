@@ -1,0 +1,107 @@
+@import url('https://fonts.googleapis.com/css?family=Montserrat');
+body {
+    overflow-x: hidden;
+}
+
+
+/*mobile nav*/
+
+.menu {
+    position: fixed;
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    overflow: hidden;
+    pointer-events: none;
+    z-index: 150;
+}
+
+.menu--visible {
+    pointer-events: auto;
+}
+
+.app-menu {
+    background-color: #fff;
+    color: #fff;
+    position: relative;
+    max-width: 400px;
+    width: 90%;
+    height: 100%;
+    box-shadow: 0 2px 6px rgba(0, 0, 0, 0.5);
+    -webkit-transform: translateX(-103%);
+    transform: translateX(-103%);
+    display: flex;
+    flex-direction: column;
+    will-change: transform;
+    z-index: 160;
+    pointer-events: auto;
+}
+
+.menu--visible .app-menu {
+    -webkit-transform: none;
+    transform: none;
+}
+
+.menu--animatable .app-menu {
+    transition: all 130ms ease-in;
+}
+
+.menu--visible.menu--animatable .app-menu {
+    transition: all 330ms ease-out;
+}
+
+.menu:after {
+    content: '';
+    display: block;
+    position: absolute;
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    background: rgba(0, 0, 0, 0.4);
+    opacity: 0;
+    will-change: opacity;
+    pointer-events: none;
+    transition: opacity 0.3s cubic-bezier(0, 0, 0.3, 1);
+}
+
+.menu--visible.menu:after {
+    opacity: 1;
+    pointer-events: auto;
+}
+
+
+/*mobile view navbar ends*/
+
+.header {
+    width: 100%;
+    height: 90px;
+    z-index: 2;
+    background-color: #47515b
+}
+
+.main-icon {
+    width: 15%;
+    margin-top: -10px;
+}
+
+.main-nav1 {
+    list-style: none;
+    float: right;
+    padding-top: 50px;
+}
+
+.main-nav1 li {
+    display: inline;
+    color: #F3843E;
+    padding: 0 5px 5px 5px;
+    cursor: pointer;
+    font-size: 17px;
+    font-family: 'Montserrat', sans-serif;
+}
+
+.main-nav1 li:hover,
+.nav-active {
+    border-bottom: 1px solid #FF5109;
+}
