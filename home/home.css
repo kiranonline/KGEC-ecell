@@ -117,8 +117,8 @@ body {
     list-style: none;
     float: right;
     margin-top: 50px;
-    transition: all 0.8s ease;
     -webkit-transition: all 0.8s ease;
+    transition: all 0.8s ease;
 }
 
 .main-nav1-scroll {
@@ -127,8 +127,7 @@ body {
 
 .main-nav1 li {
     display: inline;
-    padding: 5px;
-    margin: 0px 10px;
+    margin: 0px 5px;
     cursor: pointer;
     font-size: 17px;
     font-family: 'Roboto', sans-serif;
@@ -143,16 +142,18 @@ body {
     font-family: 'Roboto', sans-serif;
 }
 
-.main-nav1 li:hover {
-    border-bottom: 2px solid #FF5109;
+.main-nav1 li a {
+    padding: 8px 12px;
+    -webkit-transition: background 0.3s ease;
+    transition: background 0.3s ease;
 }
 
 .main-nav1 li a:hover {
-    color: #FF5109;
-}
-
-.nav-active {
-    border-bottom: 2px solid #FF5109 !important;
+    color: white;
+    background: #FF5109;
+    border-radius: 50px;
+    border: 2px solid white;
+    padding: 6px 10px;
 }
 
 
