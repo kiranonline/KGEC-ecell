@@ -85,13 +85,14 @@ body {
     height: 90px;
     z-index: 20;
     position: fixed;
-    background-color: #47515b;
+    background-color: #36454f;
     transition: all 0.8s ease;
     -webkit-transition: all 0.8s ease;
 }
 
 .header-scroll {
     height: 65px;
+    background: #2c3a44;
 }
 
 .main-icon {
@@ -144,6 +145,10 @@ body {
 
 .main-nav1 li:hover {
     border-bottom: 2px solid #FF5109;
+}
+
+.main-nav1 li a:hover {
+    color: #FF5109;
 }
 
 .nav-active {
