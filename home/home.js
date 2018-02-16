@@ -2,6 +2,12 @@ $(window).on('load', function() {
     // executes when complete page is fully loaded, including all frames, objects and images
 
 
+    function msg(m) {
+        console.log(m);
+    }
+
+    msg('all loaded');
+
     //mobile view navbar
     function toggleClassMenu() {
         myMenu.classList.add("menu--animatable");
@@ -26,7 +32,7 @@ $(window).on('load', function() {
 
 
     //animation jquery on nav bar
-    if ($(window).width() > 768) {
+    if ($(window).width() > 850) {
         $(window).scroll(function() {
             var h = $(this).scrollTop();
             if (h > 100) {

@@ -1,3 +1,4 @@
+@import url(https://fonts.googleapis.com/css?family=Roboto);
 @import url('https://fonts.googleapis.com/css?family=Montserrat');
 body {
     overflow-x: hidden;
@@ -80,50 +81,65 @@ body {
 
 .header {
     width: 100%;
-    margin-top:-1px;
+    margin-top: -1px;
     height: 90px;
-    z-index: 2;
+    z-index: 20;
     position: fixed;
     background-color: #47515b;
-    transition:all 0.8s ease;
+    transition: all 0.8s ease;
     -webkit-transition: all 0.8s ease;
 }
-.header-scroll{
-    height:65px;
+
+.header-scroll {
+    height: 65px;
 }
 
 .main-icon {
     width: 15%;
     margin-top: -10px;
-    transition:all 0.8s ease;
+    transition: all 0.8s ease;
     -webkit-transition: all 0.8s ease;
 }
 
-.main-icon-scroll{
-    width:75px;
-    margin-top:-5px;
-
+.icon-animated {
+    -webkit-animation: spin 5s forwards infinite;
+    -moz-animation: spin 5s forwards infinite;
+    animation: spin 5s forwards infinite;
 }
+
+.main-icon-scroll {
+    width: 75px;
+    margin-top: -5px;
+}
+
 .main-nav1 {
     list-style: none;
     float: right;
-    padding-top: 50px;
-    transition:all 0.8s ease;
+    margin-top: 50px;
+    transition: all 0.8s ease;
     -webkit-transition: all 0.8s ease;
 }
-.main-nav1-scroll{
-    padding-top:23px;
+
+.main-nav1-scroll {
+    margin-top: 23px;
 }
 
 .main-nav1 li {
     display: inline;
-    color: #F3843E;
-    padding: 0 5px 5px 5px;
+    padding: 5px;
+    margin: 0px 10px;
     cursor: pointer;
     font-size: 17px;
-    font-weight: bold;
-    font-family: 'Montserrat', sans-serif;
+    font-family: 'Roboto', sans-serif;
     border-bottom: none;
+}
+
+.main-nav1 li a,
+.main-nav2 li a {
+    text-decoration: none;
+    color: #F3843E;
+    cursor: pointer;
+    font-family: 'Roboto', sans-serif;
 }
 
 .main-nav1 li:hover {
@@ -137,7 +153,7 @@ body {
 
 /*mobile view*/
 
-@media(max-width:768px) {
+@media(max-width:850px) {
     .header {
         height: 60px;
     }
@@ -179,7 +195,6 @@ body {
         color: #F3843E;
         background: #3f3f3f;
         margin-bottom: 2.5px;
-        font-family: 'Montserrat', sans-serif;
         font-size: 17px;
     }
     .nav-active2 {
@@ -195,3 +210,24 @@ body {
 /*more small phones*/
 
 @media(max-width:400px) {}
+
+
+/*animations*/
+
+@-moz-keyframes spin {
+    100% {
+        -moz-transform: rotate(360deg);
+    }
+}
+
+@-webkit-keyframes spin {
+    100% {
+        -webkit-transform: rotate(360deg);
+    }
+}
+
+@keyframes spin {
+    100% {
+        transform: rotate(360deg);
+    }
+}
