@@ -25,4 +25,21 @@ $(window).on('load', function() {
     //mobile view navbar ends
 
 
+    //animation jquery on nav bar
+    if ($(window).width() > 768) {
+        $(window).scroll(function() {
+            var h = $(this).scrollTop();
+            if (h > 100) {
+                $('.header').addClass('header-scroll');
+                $('.main-nav1').addClass('main-nav1-scroll');
+                $('.main-icon').addClass('main-icon-scroll');
+            } else {
+                $('.header').removeClass('header-scroll');
+                $('.main-nav1').removeClass('main-nav1-scroll');
+                $('.main-icon').removeClass('main-icon-scroll');
+            }
+        });
+    }
+
+
 });
