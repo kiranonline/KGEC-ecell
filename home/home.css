@@ -149,10 +149,10 @@
     }
     
     .main-nav1 li:hover a {
+        border: 2px solid white;
         color: white;
         background: #FF5109;
         border-radius: 50px;
-        border: 2px solid white;
         padding: 6px 10px;
     }
     
