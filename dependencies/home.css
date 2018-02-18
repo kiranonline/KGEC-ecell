@@ -221,13 +221,13 @@
     .f-sec1,
     .f-sec2 {
         margin: 40px 0px;
-        min-height: 270px;
+        min-height: 300px;
         border-right: 1.5px solid white;
     }
     
     .f-sec3 {
         margin: 40px auto;
-        min-height: 270px;
+        min-height: 300px;
     }
     
     .f-head {
@@ -315,7 +315,7 @@
     }
     /*mobile view*/
     
-    @media(max-width:850px) {
+    @media(max-width:992px) {
         .header {
             height: 60px;
         }
@@ -371,19 +371,26 @@
             float: right;
             margin: 20px;
         }
+        .follow-list li {
+            padding: 5px;
+        }
+        .f-sec2 {
+            padding-bottom: 30px;
+        }
     }
     /*more small phones*/
     
-    @media(max-width:768px) {
+    @media(max-width:767px) {
         .f-sec1,
         .f-sec2 {
             border-right: 0;
             border-bottom: 1.5px solid white;
             min-height: 0;
-            padding-bottom: 30px;
+            padding-bottom: 25px;
+            margin: 20px 0px;
         }
         .f-sec3 {
-            margin: 20px auto;
+            margin: 25px auto;
             min-height: 0px;
         }
         .fo {
@@ -391,7 +398,16 @@
         }
         .w2,
         .w3 {
-            padding-top: 0px;
+            padding-top: 0px !important;
+        }
+        .follow-list li {
+            padding: 7px;
+        }
+        .follow-list {
+            margin-top: 30px;
+        }
+        .event-list {
+            margin-top: 30px;
         }
     }
     /*animations*/
