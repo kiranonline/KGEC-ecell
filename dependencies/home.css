@@ -222,7 +222,7 @@
     .f-sec2 {
         margin: 40px 0px;
         min-height: 300px;
-        border-right: 1.5px solid white;
+        border-right: 1.5px solid #465a68;
     }
     
     .f-sec3 {
@@ -384,7 +384,7 @@
         .f-sec1,
         .f-sec2 {
             border-right: 0;
-            border-bottom: 1.5px solid white;
+            border-bottom: 1.5px solid #465a68;
             min-height: 0;
             padding-bottom: 25px;
             margin: 20px 0px;
