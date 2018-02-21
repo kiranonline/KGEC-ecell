@@ -1,7 +1,10 @@
 $(window).on('load', function() {
     // executes when complete page is fully loaded, including all frames, objects and images
+    $('#cnt1').css('display','none');
+    $('body').css('background','white');
+    $('#cnt2').addClass('show');
 
-
+    
     function msg(m) {
         console.log(m);
     }
