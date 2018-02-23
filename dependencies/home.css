@@ -7,13 +7,14 @@
     /*loading*/
     
     .cnt2 {
-        opacity:0;
+        display:none;
         -webkit-transition: all 0.8s ease;
         transition: all 0.8s ease;
 
     }
     .show{
-        opacity:1;
+       display:block;
+
        
     }
    .loading {
@@ -374,7 +375,39 @@
         color: #b0d1e7;
     }
     /*mobile view*/
+    .likes{
+        position: fixed;
+        list-style: none;
+        left:-40px;
+        top:30%;
+        box-shadow: 1px 2px 4px rgba(0, 0, 0, .5);
+    }
+    .likes a{
+        text-decoration: none;
+        padding:15px ;
+        text-align: center;
+        display: block;
+        width:60px;
+        height:60px;
+        z-index: 10000000;
+    } 
     
+    .likes a:nth-child(1),.likes a:nth-child(3){
+        background: #464646;
+    }
+    .likes a:nth-child(2),.likes a:nth-child(4){
+        background: #636363;
+    }
+    .likes a:hover{
+        background-color: #34495e;
+    }
+    .likes a:hover i{
+        color:#b0d1e7;
+    }
+    .fol{
+        color:white;
+        font-size: 30px;
+    }
     @media(max-width:992px) {
         .header {
             height: 60px;
@@ -436,6 +469,9 @@
         }
         .f-sec2 {
             padding-bottom: 30px;
+        }
+        .likes{
+            display: none;
         }
     }
     /*more small phones*/
