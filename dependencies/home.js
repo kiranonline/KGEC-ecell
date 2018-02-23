@@ -66,4 +66,29 @@ $(window).on('load', function() {
     });
 
 
+    $('#btnn').on('click',function(){
+        if($('#likes').hasClass('opened')){
+            $('#likes').removeClass('opened');
+            $('#likes').css('transform','translateX(-60px)');
+            $('#a2').removeClass('fa-chevron-left');
+            $('#a2').addClass('fa-chevron-right');
+        }
+        else{
+            $('#likes').addClass('opened');
+            $('#likes').css('transform','translateX(0px)');
+            $('#a2').addClass('fa-chevron-left');
+            $('#a2').removeClass('fa-chevron-right');
+        }
+        if($('#a2').hasClass('fa-chevron-right')){
+            $('#a2').removeClass('sp1');
+            $('#a2').addClass('sp2');
+
+        }else{
+            $('#a2').addClass('sp1');
+            $('#a2').removeClass('sp2');
+
+        }
+    });
+
+
 });
