@@ -1,0 +1,97 @@
+html ,body{
+  box-sizing: border-box;
+    max-width: 100%;
+    overflow-x: hidden;
+   }
+
+p {
+    font-family: "Times New Roman";
+    font-size: 20px;
+    color: #FF5A09;
+}
+h2{
+  color: #FF5A09;
+
+}
+
+*, *:before, *:after {
+  box-sizing: inherit;
+}
+i {
+    color: #FF5A09;
+    font-size:16px;
+
+}
+.im{
+  padding-left:27%;
+}
+
+.column {
+  float: left;
+  width: 24.5%;
+  margin-bottom: 16px;
+  padding: 0 8px;
+}
+.column1{
+align-items: :center;
+float: left;
+  height:400px;
+  width:49%;
+  margin-bottom: 16px;
+  padding: 0 8px;
+}
+@media (max-width: 600px) {
+  .column {
+    width: 100%;
+    display: block;
+    overflow-x: hidden;
+  }
+  .column1{
+    width: 100%;
+    display: block;
+    overflow-x: hidden;
+  }
+}
+
+.card {
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
+}
+
+.container {
+  padding-left: 10%;
+  padding: 0 16px;
+}
+
+.container::after, .row::after {
+  content: "";
+  clear: both;
+  display: table;
+}
+
+.title {
+  color: grey;
+}
+.title1 {
+  color: grey;
+  padding-left:39%;
+  font-size:20px;
+}
+.ima{
+  padding-left:5%;
+}
+img {
+     padding:10px;
+    opacity: 0.9;
+    transition: opacity 1s ease-in-out;
+    -moz-transition: opacity 1s ease-in-out;
+    -webkit-transition: opacity 1s ease-in-out;
+}
+
+img:hover {
+    opacity:1;
+    transform: scale(1.1); /* (150% zoom - Note: if the zoom is too large, it will go outside of the viewport) */
+    transition: opacity .55s ease-in-out;
+    -moz-transition: opacity .55s ease-in-out;
+    -webkit-transition: opacity .55s ease-in-out;
+}​
+
