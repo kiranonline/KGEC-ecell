@@ -403,6 +403,7 @@
     }
     .likes a:hover i{
         color:#b0d1e7;
+        transform: scale(1.1);
     }
     .fol{
         color:white;
