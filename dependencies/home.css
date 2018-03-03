@@ -141,7 +141,7 @@
     .header {
         width: 100%;
         margin-top: -1px;
-        height: 90px;
+        height: 82px;
         z-index: 20;
         position: fixed;
         background-color: #36454f;
@@ -162,14 +162,14 @@
     }
     
     .main-icon-scroll {
-        width: 75px;
+        width: 70px;
         margin-top: -5px;
     }
     
     .main-nav1 {
         list-style: none;
         float: right;
-        margin-top: 50px;
+        margin-top: 40px;
         -webkit-transition: all 0.8s ease;
         transition: all 0.8s ease;
     }
@@ -182,8 +182,8 @@
         display: inline;
         margin: 0px 5px;
         cursor: pointer;
-        font-size: 17px;
         font-family: 'Roboto', sans-serif;
+        font-size: 16px !important;
         border-bottom: none;
     }
     
@@ -206,8 +206,7 @@
         border: 2px solid white;
         color: white;
         background: #FF5109;
-       
-        border-radius: 50px;
+       border-radius: 50px;
         padding: 6px 10px;
     }
     

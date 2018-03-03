@@ -11,6 +11,9 @@
     <link href="//maxcdn.bootstrapcdn.com/bootstrap/3.3.0/css/bootstrap.min.css" rel="stylesheet" id="bootstrap-css">
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
 <script src="//maxcdn.bootstrapcdn.com/bootstrap/3.3.0/js/bootstrap.min.js"></script>
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/jquery.bootstrapvalidator/0.5.0/css/bootstrapValidator.min.css"/>
+<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.2.0/css/bootstrap-theme.min.css"/>
+  <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/bootstrap-validator/0.4.5/js/bootstrapvalidator.min.js"> </script>
 
 
     <!--font awasome cdn-->
@@ -18,107 +21,162 @@
 	<link rel="stylesheet" href="css/reg.css">
 	<link rel="stylesheet" href="js/ALERT/css/alertify.min.css">
 	<link rel="stylesheet" href="js/ALERT/css/alertify.rtl.min.css">
-   
+    
 </head>
+
+
+<style>
+	#success_message{ display: none;}
+	.cnt{
+		padding-left:10%;
+		padding-right: 10%;
+		padding-top: 5%;
+		
+	}
+	.well{
+		/*background:rgba(255,255,255,0.85);*/
+		background: rgba(0,0,0,0.8);
+
+	}
+	.control-label,.aa{
+		color:white;
+	}
+	@media(max-width:768px){
+		.cnt{
+			padding:20px;;
+		}
+	}
+</style>
+
 <body>
-<div class="container">
-    <div class="vv">
-			<div class="row main">
-				<div class="main-login main-center">
-				<h5 style="text-align:center">Sign up and get a chance to be our Campus Ambassador.</h5>
-						
-						<div class="form-group">
-							<label for="name" class="cols-sm-2 control-label">Your Name</label>
-							<div class="cols-sm-10">
-								<div class="input-group">
-									<span class="input-group-addon"><i class="fa fa-user fa" aria-hidden="true"></i></span>
-									<input type="text" class="form-control" name="name" id="name"  placeholder="Enter your Name"/>
-								</div>
-							</div>
-						</div>
-
-						<div class="form-group">
-							<label for="email" class="cols-sm-2 control-label">Your Email</label>
-							<div class="cols-sm-10">
-								<div class="input-group">
-									<span class="input-group-addon"><i class="fa fa-envelope fa" aria-hidden="true"></i></span>
-									<input type="text" class="form-control" name="email" id="email"  placeholder="Enter your Email"/>
-								</div>
-							</div>
-						</div>
-
-						<div class="form-group">
-							<label for="username" class="cols-sm-2 control-label">College Name</label>
-							<div class="cols-sm-10">
-								<div class="input-group">
-									<span class="input-group-addon"><i class="fa fa-building fa" aria-hidden="true"></i></span>
-									<input type="text" class="form-control" name="college" id="college"  placeholder="Enter your College Name"/>
-								</div>
-							</div>
-						</div>
-
-						<div class="form-group">
-							<label for="password" class="cols-sm-2 control-label">Department</label>
-							<div class="cols-sm-10">
-								<div class="input-group">
-									<span class="input-group-addon"><i class="fa fa-book fa-lg" aria-hidden="true"></i></span>
-									<input type="text" class="form-control" name="department" id="department"  placeholder="Enter your Department"/>
-								</div>
-							</div>
-						</div>
-
-						<div class="form-group">
-							<label for="confirm" class="cols-sm-2 control-label">Age</label>
-							<div class="cols-sm-10">
-								<div class="input-group">
-									<span class="input-group-addon"><i class="fa fa-user fa-lg" aria-hidden="true"></i></span>
-									<input type="text" class="form-control" name="age" id="age"  placeholder="Enter your Age"/>
-								</div>
-							</div>
-						</div> 
-
-						<div class="form-group">
-							<label for="confirm" class="cols-sm-2 control-label">Why do you want to be our C.A</label>
-							<div class="cols-sm-10">
-								<div class="input-group">
-									<span class="input-group-addon"><i class="fa fa-american-sign-language-interpreting " aria-hidden="true"></i></span>
-									<textarea type="text" class="form-control" name="why1" id="why1"  placeholder="Why do you want to be our C.A" cols="40" rows="4" style='resize: none;'></textarea>
-								</div>
-							</div>
-						</div>
 
 
 
-						<div class="form-group">
-							<label for="confirm" class="cols-sm-2 control-label">Why should we hire you</label>
-							<div class="cols-sm-10">
-								<div class="input-group">
-									<span class="input-group-addon"><i class="fa fa-american-sign-language-interpreting " aria-hidden="true"></i></span>
-									<textarea type="text" class="form-control" name="why2" id="why2"  placeholder="Whhy should we hire you" cols="40" rows="4" style='resize: none;'></textarea>
-								</div>
-							</div>
-						</div>
+<div class="cnt">
 
-<br>
-						<div class="form-group">
-                            <button class="btn btn-primary btn-lg btn-block login-button button" id="b1">Register</button>
-							
-                        </div>
-                        <div class="form-group">
-                        <a href="esummit.html"  class="btn btn-primary btn-lg btn-block login-button button">Go Back to Home</a>   
-                    </div>
-						
-					
+	<form action="server/server.php" method="POST" class="well form-horizontal" id="contact_form">
+		<fieldset class="ff">
+
+		<legend class="text-center aa">Be our C.A</legend>
+
+
+		<div class="form-group">
+			<label class="col-md-4 control-label">Name</label>  
+			<div class="col-md-4 inputGroupContainer">
+				<div class="input-group">
+				<span class="input-group-addon"><i class="glyphicon glyphicon-user"></i></span>
+				<input  name="name" placeholder="Enter your Name" class="form-control"  type="text">
 				</div>
-            </div>
-            
-</div>
+			</div>
+		</div>
+
+		<!-- Text input-->
+		<div class="form-group">
+			<label class="col-md-4 control-label">E-Mail</label>  
+			<div class="col-md-4 inputGroupContainer">
+				<div class="input-group">
+				<span class="input-group-addon"><i class="glyphicon glyphicon-envelope"></i></span>
+				<input name="email" placeholder="E-Mail Address" class="form-control"  type="text">
+				</div>
+			</div>
 		</div>
 
 
+		<!-- Text input-->
+		
+		<div class="form-group">
+			<label class="col-md-4 control-label">Phone</label>  
+			<div class="col-md-4 inputGroupContainer">
+				<div class="input-group">
+				<span class="input-group-addon"><i class="glyphicon glyphicon-earphone"></i></span>
+				<input name="phone" placeholder="Phone number" class="form-control" type="text">
+				</div>
+			</div>
+		</div>
 
- <script src="js/reg.js"></script>
+		<!-- Text input-->
+		
+		<div class="form-group">
+			<label class="col-md-4 control-label">College</label>  
+			<div class="col-md-4 inputGroupContainer">
+				<div class="input-group">
+				<span class="input-group-addon"><i class="glyphicon glyphicon-home"></i></span>
+				<input name="college" placeholder="College" class="form-control" type="text">
+				</div>
+			</div>
+		</div>
+
+		<!-- Text input-->
+
+		<div class="form-group">
+			<label class="col-md-4 control-label">Department</label>  
+			<div class="col-md-4 inputGroupContainer">
+				<div class="input-group">
+				<span class="input-group-addon"><i class="glyphicon glyphicon-home"></i></span>
+				<input name="department" placeholder="Department" class="form-control"  type="text">
+				</div>
+			</div>
+		</div>
+
+		<!-- Select Basic -->
+
+
+		<!-- Text input-->
+
+		<div class="form-group">
+			<label class="col-md-4 control-label">Age</label>  
+			<div class="col-md-4 inputGroupContainer">
+				<div class="input-group">
+					<span class="input-group-addon"><i class="glyphicon glyphicon-home"></i></span>
+				<input name="age" placeholder="Age" class="form-control"  type="text">
+				</div>
+			</div>
+		</div>
+
+		<div class="form-group">
+			<label class="col-md-4 control-label">Why do you want to be our C.A</label>
+			<div class="col-md-4 inputGroupContainer">
+				<div class="input-group">
+					<span class="input-group-addon"><i class="glyphicon glyphicon-pencil"></i></span>
+						<textarea class="form-control" name="why1" placeholder="Reason"></textarea>
+				</div>
+			</div>
+		</div>
+
+		<div class="form-group">
+			<label class="col-md-4 control-label">Why should we choose you as our C.A</label>
+			<div class="col-md-4 inputGroupContainer">
+				<div class="input-group">
+					<span class="input-group-addon"><i class="glyphicon glyphicon-pencil"></i></span>
+						<textarea class="form-control" name="why2" placeholder="Reason"></textarea>
+				</div>
+			</div>
+		</div>
+
+		<!-- Success message -->
+		<div class="alert alert-success" role="alert" id="success_message">Success <i class="glyphicon glyphicon-thumbs-up"></i> Thanks for contacting us, we will get back to you shortly.</div>
+
+		<!-- Button -->
+		<div class="form-group">
+		<label class="col-md-4 control-label"></label>
+		<div class="col-md-4 text-center">
+		<button type="submit" class="btn btn-warning" >Register <span class="glyphicon glyphicon-send"></span></button>
+		</div>
+		
+	</div>
+	<div class="col-md-12" style="float:right">
+		<a href="esummit.html" class="btn btn-warning" >Back to Home <span class="glyphicon glyphicon-send"></span></a>
+		</div>
+
+		</fieldset>
+	</form>
+</div>
+
+
+
+<script src="js/reg.js"></script>
  <script src="js/ALERT/alertify.min.js"></script>
+
  
 
 </body>

@@ -17,8 +17,8 @@ $.getScript('https://cdn.rawgit.com/yairEO/photobox/master/photobox/jquery.photo
             method:'flickr.people.getPublicPhotos',
 			per_page : numOfImages,
             //api_key: 'b51d3a7c3988ba6052e25cb152aecba2'
-            api_key: '86133de9e6c046bf8bc99667079bb700', // this is my own API key, please use yours
-            user_id: '162945469@N03',
+            api_key: 'f40a824daa31d2bb7df98c9926d0a9d2', // this is my own API key, please use yours
+            user_id: '140366858@N05',
         },
 	    dataType: 'jsonp',
         jsonp: 'jsoncallback'

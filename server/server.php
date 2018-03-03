@@ -2,22 +2,25 @@
 
 include('conn.php');
 
-if($_REQUEST['name']!=NULL){
-    $name=$_REQUEST['name'];
-    $email=$_REQUEST['email'];
-    $college=$_REQUEST['college'];
-    $department=$_REQUEST['department'];
-    $age=$_REQUEST['age'];
-    $why1=$_REQUEST['why1'];
-    $why2=$_REQUEST['why2'];
+if($_POST['name']!=NULL){
+    $name=$_POST['name'];
+    $email=$_POST['email'];
+    $college=$_POST['college'];
+    $phone=$_POST['phone'];
+    $department=$_POST['department'];
+    $age=$_POST['age'];
+    $why1=$_POST['why1'];
+    $why2=$_POST['why2'];
 
-    $sql = "INSERT INTO ca (name,email,college,department,age,why1,wh2)
-    VALUES ('$name', '$email', '$college','$department','$age','$why1','$why2')";
+    $sql = "INSERT INTO ca (name,email,phone,college,department,age,why1,wh2)
+    VALUES ('$name', '$email','$phone', '$college','$department','$age','$why1','$why2')";
 
     if ($conn->query($sql) === TRUE) {
-        echo "New record created successfully";
+        header('Location: ../campus.php?msg=You are registered');
     } else {
+        
         echo "Error: " . $sql . "<br>" . $conn->error;
+
     }
 
 
