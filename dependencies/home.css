@@ -204,7 +204,7 @@
     
     .main-nav1 li:hover a {
         border: 2px solid white;
-        color: white;
+        color: white !important;
         background: #FF5109;
        border-radius: 50px;
         padding: 6px 10px;

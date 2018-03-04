@@ -1,22 +1,45 @@
+.nn{
+    background-image: url('../img/team.jpg');
+    width: 100%;
+    height: 100%; 
+    background-attachment: fixed;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+.hll{
+  margin-top:-80px;
+  background: rgba(0,0,0,0.4);
+}
+.hdd{
+  padding-top:130px;
+}
 .row-main{
-  width:70%;
-  margin:20px 15%;
+  width:80%;
+  margin:40px 10%;
 }
 .card{
   width:100%;
-  height:470px;
+  height:500px;
   padding:15px 0px;
   box-shadow: 0 4px 8px 0 rgba(0,0,0,0.2);
 }
 .cardimage{
-  width:80%;
-  height: 270px;
-  margin: 20px 10%;
-  border-radius: 50%;
+  width:70%;
+  height: 300px;
+  margin: 20px 15%;
+  border-radius:50%;
+  cursor: pointer;
+  background: rgb(1, 75, 88);
+  border:1px solid rgb(1, 75, 88);
   
 }
 .name{
-  color:#e0400f;
+  color:#f37907;
+}
+
+.fap{
+  color:white;
 }
 
 .row-ul{
@@ -29,9 +52,24 @@
   text-decoration: none;
   padding:7px 17px;
 }
+
 @media(max-width:769px){
   .row-main{
     width:100%;
-    margin: 20px 0px;
+    margin:0px;
   }
-}
+  .card{
+    margin-bottom: 20px;
+  }
+  .cardimage{
+    width: 90%;
+    margin: 20px 5%;
+    height:270px;
+  }
+  .hll{
+    margin-top: -30px;
+  }
+  .hdd{
+    padding-top:30px;
+  }
+  }
