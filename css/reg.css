@@ -121,3 +121,23 @@ span.input-group-addon i {
 .button:hover{
     color: #050a0c;
 }
+.result{
+    display: none;
+    text-align: center;
+    background: rgba(0,0,0,0.7);
+    height: 100%;
+}
+.lss{
+    list-style: none;
+    padding:0;
+    margin: 0;
+    width:50%;
+    margin-left: 25%;
+}
+.ans{
+    margin-top: 250px;
+    color:white;
+}
+.lss a{
+    display: block;
+}

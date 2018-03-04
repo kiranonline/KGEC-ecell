@@ -51,10 +51,9 @@
 <body>
 
 
-
 <div class="cnt">
 
-	<form action="server/server.php" method="POST" class="well form-horizontal" id="contact_form">
+	<form action="server.php" method="POST" class="well form-horizontal" id="contact_form">
 		<fieldset class="ff">
 
 		<legend class="text-center aa">Be our C.A</legend>
@@ -173,11 +172,30 @@
 </div>
 
 
+<div class="container-fluid result text-center">
+	<h3 class="ans">Regestered Sucessfully</h3>
+	<ul class="lss">
+		<a href="esummit.html" class="btn btn-warning" >Back to Home <span class="glyphicon glyphicon-send"></span></a>
+		<a href="campus.php" class="btn btn-warning" >Register Another<span class="glyphicon glyphicon-send"></span></a>
+	</ul>
+</div>
+
 
 <script src="js/reg.js"></script>
  <script src="js/ALERT/alertify.min.js"></script>
 
  
+<?php
+	if(isset($_GET['result'])){
+		echo"<script>
+			$('.cnt').css('display','none');
+			$('.result').css('display','block');
+
+		</script>";
+	}
+
+
+?>
 
 </body>
 </html>

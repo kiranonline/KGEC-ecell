@@ -111,8 +111,7 @@ $(document).ready(function() {
 
             // Use Ajax to submit form data
            $.post($form.attr('action'), $form.serialize(), function(result) {
-                console.log('hello');
-                console.log(result);
+                
             }, 'json');
         });
 });
