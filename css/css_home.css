@@ -16,8 +16,8 @@ body{
 }
 .cn1{
     color: #34495e;
-    margin-top: 5vh;
-    margin-bottom: 5vh;
+    margin-top: 6vw;
+    /* margin-bottom: 5vh; */
     margin-left: 4vw;
     margin-right: 4vw;
     /* text-align: center; */
@@ -31,6 +31,19 @@ body{
 .bdr{
     text-align: center;
     margin: 10vw 0px;
+}
+#gall{
+    display: block;
+    width: 100vw;
+    color: white;
+    background-color: #4b4e53;
+    text-decoration: none;
+    text-align: center; 
+    height: 8vh;
+    line-height: 8vh;
+}
+#gall:hover{
+    background-color: black;
 }
 @media only screen  and (max-width : 992px) {
     #demo{
