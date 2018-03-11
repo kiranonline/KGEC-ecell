@@ -65,24 +65,26 @@ body{
     text-align: center;
     margin: 10vw 0px;
 }
-#gall{
-    display: block;
-    width: 100vw;
-    color: white;
-    background-color: #4b4e53;
-    text-decoration: none;
-    text-align: center; 
-    height: 8vh;
-    line-height: 8vh;
-}
-#gall:hover{
-    background-color: black;
-}
 
+.glll{
+    margin:20px auto;
+    padding:0;
+}
+.gg11{
+    margin-bottom: 20px;
+}
+.aa{
+    width:100%;
+}
 
 @media only screen  and (max-width : 992px){
     #demo{
         padding-top: 8vh;
+    }
+}
+@media(max-width:782px){
+    .aa{
+        margin-bottom: 10px;
     }
 }
 @media only screen  and (max-width : 392px) {
