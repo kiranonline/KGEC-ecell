@@ -16,8 +16,9 @@ body, html {
 .holder1{
     background: rgba(0,0,0,0.7);
     text-align: center;
-   padding-top:100px;
+   padding-top:150px;
    padding-bottom: 100px;
+   margin-top:-80px;
    margin-bottom: -10px;
 
 }
@@ -36,7 +37,10 @@ body, html {
     padding: 25px;
     font-family: 'EB Garamond', serif;
 }
-
+.lss{
+    margin:0;
+    padding:0;
+}
 
 
 @media(max-width:992px){
@@ -54,5 +58,8 @@ body, html {
     }
     .a3{
         font-size: 30px;
+    }
+    .gg1,.gg2{
+        margin-bottom: 10px;
     }
 }
