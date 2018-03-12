@@ -70,8 +70,10 @@ body{
 }
 
 .glll{
-    margin:20px auto;
-    padding:0;
+    width: 100%;
+    /* margin:20px 20px; */
+    padding: 5vh 6vh 2vh;
+    background-color: #4b4e53d5;
 }
 .gg11{
     margin-bottom: 20px;
@@ -79,6 +81,22 @@ body{
 .aa{
     width:100%;
 }
+.fwb{
+    width:100%;
+    color: white;
+    background-color: #4b4e53d5;
+    text-decoration: none;
+    text-align: center; 
+    height: 8vh; 
+     line-height: 8vh; 
+     color: white;
+    background-color: #4b4e53d5;
+    text-decoration: none;
+    text-align: center; 
+    height: 8vh; 
+     line-height: 6vh; 
+}
+
 
 @media only screen  and (max-width : 992px){
     #demo{
