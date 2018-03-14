@@ -14,9 +14,14 @@ body{
     /* margin-left: 2vh;  */
 }
 .cc{
+<<<<<<< HEAD
 
+=======
+   display: block;
+>>>>>>> 64725a0ccca59d0222e8442b730453b8d636e4a8
     font-size:150%;
     color: white;
+    background: rgb(16, 25, 44);
     text-decoration: none !important;
 }
 /*.cc1{
