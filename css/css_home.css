@@ -14,24 +14,24 @@ body{
     /* margin-left: 2vh;  */
 }
 .cc{
-   
+
     font-size:150%;
     color: white;
     text-decoration: none !important;
-} 
+}
 /*.cc1{
     display: block;
-    width: 20vw; 
+    width: 20vw;
     color: white;
     background-color: #4b4e53d5;
     text-decoration: none;
-    text-align: center; 
-    height: 8vh; 
-     line-height: 8vh; 
+    text-align: center;
+    height: 8vh;
+     line-height: 8vh;
 }*/
 .cc:hover{
     text-decoration: none;
-    color: white; 
+    color: white;
 }
 .carousel-inner img {
     width: 100%;
@@ -42,7 +42,7 @@ body{
 }
 .aaa{
         background: #36454f;
- 
+
 }
 .ul1{
     padding-top: 20px;
@@ -102,15 +102,15 @@ body{
     color: white;
     background-color: #4b4e53d5;
     text-decoration: none;
-    text-align: center; 
-    height: 8vh; 
-     line-height: 8vh; 
+    text-align: center;
+    height: 8vh;
+     line-height: 8vh;
      color: white;
     background-color: #4b4e53d5;
     text-decoration: none;
-    text-align: center; 
-    height: 8vh; 
-    line-height: 6vh; 
+    text-align: center;
+    height: 8vh;
+    line-height: 6vh;
 }
 .carousel-item{
     height:550px;
@@ -129,8 +129,8 @@ font-size: 60px;
     font-weight: normal;
     src: local('Samarkan Normal'), url('../dependencies/SAMARN__.woff') format('woff');
     }
-    
-    
+
+
     /* @font-face {
     font-family: 'Samarkan Oblique';
     font-style: normal;

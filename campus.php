@@ -133,7 +133,7 @@
 		</div>
 
 		<div class="form-group">
-			<label class="col-md-4 control-label">Why do you want to be our C.A</label>
+			<label class="col-md-4 control-label">Why do you want to be our C.A?</label>
 			<div class="col-md-4 inputGroupContainer">
 				<div class="input-group">
 					<span class="input-group-addon"><i class="glyphicon glyphicon-pencil"></i></span>
@@ -143,7 +143,7 @@
 		</div>
 
 		<div class="form-group">
-			<label class="col-md-4 control-label">Why should we choose you as our C.A</label>
+			<label class="col-md-4 control-label">Why should we choose you as our C.A?</label>
 			<div class="col-md-4 inputGroupContainer">
 				<div class="input-group">
 					<span class="input-group-addon"><i class="glyphicon glyphicon-pencil"></i></span>

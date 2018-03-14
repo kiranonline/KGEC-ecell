@@ -7,11 +7,24 @@ body, html {
 .main-body{
     background-image: url('../img/bge.jpg');
     width: 100%;
-    height: 100%; 
+    height: 100%;
     background-attachment: fixed;
     background-position: center;
     background-repeat: no-repeat;
     background-size: cover;
+}
+.blink_me {
+  animation: blinker 1s linear infinite;
+  font-size: 20px;
+  font-family: 'Libre Baskerville', serif;
+  color:white;
+
+}
+
+@keyframes blinker {
+  50% {
+    opacity: 0;
+  }
 }
 .holder1{
     background: rgba(0,0,0,0.7);
