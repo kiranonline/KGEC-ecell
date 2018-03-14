@@ -155,7 +155,7 @@
     }
     
     .main-icon {
-        width: 15%;
+        width:100px;
         margin-top: -10px;
         transition: all 0.8s ease;
         -webkit-transition: all 0.8s ease;
@@ -375,11 +375,13 @@
     }
     /*mobile view*/
     .likes{
+        
         position: fixed;
         list-style: none;
         left:-40px;
         top:200px;
         box-shadow: 1px 2px 4px rgba(0, 0, 0, .5);
+        transform:translateX(-60px);
     }
     .likes a{
         text-decoration: none;

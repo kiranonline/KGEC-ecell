@@ -65,5 +65,8 @@ $(window).scroll(function() {
 
 });
 
+
+$(".amm").append('+');
+
       });
 
