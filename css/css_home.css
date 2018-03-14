@@ -14,13 +14,8 @@ body{
     /* margin-left: 2vh;  */
 }
 .cc{
-    /* display: block;
-    width: 20vw;
-    background-color: #4b4e53;
-    text-align: center; 
-    height: 8vh;
-    line-height: 8vh;*/
-    font-size: 3em;
+   
+    font-size:150%;
     color: white;
     text-decoration: none !important;
 } 
@@ -117,6 +112,9 @@ body{
     height: 8vh; 
     line-height: 6vh; 
 }
+.carousel-item{
+    height:550px;
+}
 #sank{
 font-family: 'Samarkan Normal';
 font-weight: normal;
@@ -149,6 +147,9 @@ font-size: 60px;
     .aa{
         margin-bottom: 10px;
     }
+    .carousel-item{
+        height:450px;
+    }
 }
 @media only screen  and (max-width : 392px) {
     .grid2{
@@ -158,5 +159,8 @@ font-size: 60px;
 @media only screen  and (max-width : 578px) {
     .cc{
         font-size: 1em;
+    }
+    .carousel-item{
+        height:350px;
     }
 }
