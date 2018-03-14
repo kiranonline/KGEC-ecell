@@ -14,9 +14,10 @@ body{
     /* margin-left: 2vh;  */
 }
 .cc{
-   
+   display: block;
     font-size:150%;
     color: white;
+    background: rgb(16, 25, 44);
     text-decoration: none !important;
 } 
 /*.cc1{
