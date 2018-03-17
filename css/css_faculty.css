@@ -36,6 +36,15 @@
   background: rgb(1, 75, 88);
   border:10px solid rgb(1, 75, 88);
   }
+  .cardimage1{
+    width:80%;
+    height: 350px;
+    margin: 20px 10%;
+    border-radius:55%;
+    cursor: pointer;
+    background: rgb(1, 75, 88);
+    border:10px solid rgb(1, 75, 88);
+  }
 .name{
   color:#f37907;
 }
